@@ -4,6 +4,8 @@
 
 #include <string>
 
+enum class DownloadState { Stopped = 0, Running = 1, Finished = 2 };
+
 struct DownloadEntry {
     bool isRunning;
     std::string url;

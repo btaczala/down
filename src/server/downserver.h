@@ -9,6 +9,7 @@ class IFetcher;
 
 struct DownServer {
     DownServer(std::unique_ptr<IFetcher>&& fetcher);
+    ~DownServer();
 
     bool add(const std::string& where, const std::string& path = "");
 
